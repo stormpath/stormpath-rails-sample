@@ -1,6 +1,6 @@
 development:
   href: <%= ENV['STORMPATH_URL'] %>
-  root: https://api.stormpath.com/v1/directories/ZR_JlCc0QlKaUdD5-yYAhA
+  root: https://api.stormpath.com/v1/directories/CuRnLT-YTO6SZ808ndy9jQ
 
 test:
   href: <%= ENV['STORMPATH_URL'] %>
@@ -8,4 +8,4 @@ test:
 
 production:
   href: <%= ENV['STORMPATH_URL'] %>
-  root: https://api.stormpath.com/v1/directories/ZR_JlCc0QlKaUdD5-yYAhA
+  root: https://api.stormpath.com/v1/directories/zqlLJ_SjTCmoh10Nl3oTIg
