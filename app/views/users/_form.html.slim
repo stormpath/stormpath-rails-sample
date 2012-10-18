@@ -1,0 +1,10 @@
+= simple_form_for(@user) do |f|
+  - unless @user.errors.empty?
+    p.errors = @user.errors.full_messages.join(", ")
+
+  .form-inputs
+    - User::STORMPATH_FIELDS.each do |field|
+      = f.input field
+
+  .form-actions
+    = f.button :submit

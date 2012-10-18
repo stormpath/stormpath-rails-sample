@@ -1,0 +1,14 @@
+p#notice = notice
+
+dl
+  dt Id
+  dd = @user.id
+  dt Url
+  dd = @user.stormpath_url
+  - (User::STORMPATH_FIELDS - [:password]).each do |field|
+    dt = field.to_s.humanize
+    dd = @user.send(field)
+
+= link_to 'Edit', edit_user_path(@user)
+'|
+= link_to 'Back', users_path

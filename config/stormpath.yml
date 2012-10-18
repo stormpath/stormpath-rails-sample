@@ -1,0 +1,11 @@
+development:
+  href: <%= ENV['STORMPATH_URL'] %>
+  root: https://api.stormpath.com/v1/directories/ZR_JlCc0QlKaUdD5-yYAhA
+
+test:
+  href: <%= ENV['STORMPATH_URL'] %>
+  root: https://api.stormpath.com/v1/directories/ZR_JlCc0QlKaUdD5-yYAhA
+
+production:
+  href: <%= ENV['STORMPATH_URL'] %>
+  root: https://api.stormpath.com/v1/directories/ZR_JlCc0QlKaUdD5-yYAhA
