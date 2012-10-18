@@ -29,6 +29,4 @@ group :test, :development do
   gem "sqlite3"
 end
 
-group :development do
-  gem "thin"
-end
+gem "thin"
