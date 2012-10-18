@@ -1,7 +1,6 @@
 source :rubygems
 
 gem "rails", "3.2.8"
-gem "sqlite3"
 gem "inherited_resources"
 gem "devise"
 
@@ -27,6 +26,7 @@ group :test, :development do
   gem "database_cleaner"
   gem "rb-inotify", "~> 0.8.8"
   gem "guard-cucumber"
+  gem "sqlite3"
 end
 
 group :development do
