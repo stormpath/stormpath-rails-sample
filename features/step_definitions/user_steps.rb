@@ -1,3 +1,13 @@
+When /^I sign in with user email and password$/ do
+  fill_in "Username", with: @user.username
+  fill_in "Password", with: FactoryGirl.attributes_for(:user)[:password]
+  click_on "Sign in"
+end
+
+Then /^I should sign in successfully$/ do
+  page.should have_content("Signed in successfully.")
+end
+
 When /^existing user$/ do
   @user = FactoryGirl.create(:user)
 end

@@ -6,7 +6,9 @@ html
     = csrf_meta_tags
   body
     .container
+      = render partial: "layouts/flashes"
       = yield
+    = render partial: "layouts/navigation"
     = javascript_include_tag "application"
     /[if lt IE 9]
       = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"

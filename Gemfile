@@ -6,9 +6,11 @@ gem "sqlite3", groups: [:test, :development]
 gem "thin"
 gem "rails", "3.2.8"
 gem "inherited_resources"
-gem "devise"
 
 gem "stormpath-rails"
+
+gem "devise"
+gem "devise-stormpath"
 
 group :assets do
   gem "sass-rails"

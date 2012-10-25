@@ -61,8 +61,8 @@ module StormpathRailsSample
 
     config.generators do |g|
       g.fixture_replacement :factory_girl, :dir => 'features/factories'
-      g.form_builder :simple_form
-      g.template_engine :slim
     end
+
+    config.assets.initialize_on_precompile = false
   end
 end

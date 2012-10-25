@@ -1,11 +1,12 @@
-development:
+common:
   href: <%= ENV['STORMPATH_URL'] %>
+  application: https://api.stormpath.com/v1/applications/vmuSPsTBRnGBQ6JaxxeuhA
+
+development:
   root: https://api.stormpath.com/v1/directories/CuRnLT-YTO6SZ808ndy9jQ
 
 test:
-  href: <%= ENV['STORMPATH_URL'] %>
   root: https://api.stormpath.com/v1/directories/ZR_JlCc0QlKaUdD5-yYAhA
 
 production:
-  href: <%= ENV['STORMPATH_URL'] %>
   root: https://api.stormpath.com/v1/directories/zqlLJ_SjTCmoh10Nl3oTIg
