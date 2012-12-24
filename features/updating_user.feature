@@ -1,6 +1,7 @@
+@stormpath
 Feature: Updating user with stormpath account
   Background:
-    Given existing user
+    Given I am logged in
 
   Scenario: Update user
     When I go to the edit user page

@@ -1,7 +1,8 @@
+@stormpath
 Feature: Deleting user with stormpath account
 
   Background:
-    Given existing user
+    Given I am logged in
 
   Scenario: Delete user
     When I go to the users page

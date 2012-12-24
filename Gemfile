@@ -1,15 +1,12 @@
 source :rubygems
 
-gem "pg", group: :production
 gem "sqlite3", groups: [:test, :development]
 
+gem "pg", group: :production
 gem "thin"
+
 gem "rails", "3.2.8"
-gem "inherited_resources"
 
-gem "stormpath-rails"
-
-gem "devise"
 gem "devise-stormpath"
 
 group :assets do
@@ -31,5 +28,8 @@ group :test, :development do
   gem "factory_girl_rails"
   gem "database_cleaner"
   gem "rb-inotify", "~> 0.8.8"
+  gem "guard-rspec"
   gem "guard-cucumber"
+  gem "vcr"
+  gem "fakeweb"
 end

@@ -1,4 +1,8 @@
+@stormpath
 Feature: Creating user with stormpath account
+  Background:
+    Given I am logged in
+
   Scenario: Add user
     Given I am on the new user page
     When I create user
