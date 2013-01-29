@@ -5,9 +5,9 @@ gem "sqlite3", groups: [:test, :development]
 gem "pg", group: :production
 gem "thin"
 
-gem "rails", "3.2.8"
+gem "rails", "3.2.11"
 
-gem "devise-stormpath"
+gem "devise-stormpath", "0.2.0"
 
 group :assets do
   gem "sass-rails"
