@@ -1,6 +1,7 @@
 /.bundle
 /db/*.sqlite3
 /log/*.log
+/features/cassettes/*
 /tmp
 .idea/
 .rvmrc

@@ -31,5 +31,5 @@ group :test, :development do
   gem "guard-rspec"
   gem "guard-cucumber"
   gem "vcr"
-  gem "fakeweb"
+  gem "webmock"
 end
