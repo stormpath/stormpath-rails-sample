@@ -1,6 +1,12 @@
+---
 language: ruby
-rvm:
-  - 1.9.3
+env:
+  global:
+  - secure: ! 'RuAMc+GQDkNxMcIx1Tt+6v1ciWCEtJpcp/MIsKQEZgyADXpMzocxaAkZRiAl
+
+      DHxKtamMXE/f/8xQDQsmTwH+ve6js1bBKjlM+uDmGt9I16BgMDVnoouQO4mq
+
+      sgdKQnn9gF8/pzmUsIsh0PBFt0H7eOQTQztSXErXOnajbHCdjtI='
 script:
-  - RAILS_ENV=test bundle exec rake db:migrate
-  - RAILS_ENV=test bundle exec rake cucumber
+- RAILS_ENV=test bundle exec rake db:migrate
+- RAILS_ENV=test bundle exec rake cucumber
