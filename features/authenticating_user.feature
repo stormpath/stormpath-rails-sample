@@ -11,3 +11,15 @@ Feature: Authenticating user
     When I go to the new user session page
     And I sign in with incorrect username and password
     Then I should see login error
+
+  Scenario Outline: Restricted user sign in
+    Given a <state> user
+    When I go to the new user session page
+    And I sign in with username and password
+    Then I should see failed sign in
+
+    Examples:
+      | state      |
+      | UNVERIFIED |
+      | BLOCKED    |
+      | DISABLED   |

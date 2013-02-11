@@ -55,6 +55,10 @@ When /^user with real email$/ do
   @user = FactoryGirl.create(:user, email: "alterdenis@gmail.com")
 end
 
+When /^a (.*) user$/ do |status|
+  @user = FactoryGirl.create(:user, status: status)
+end
+
 When /^I update user$/ do
   @another_user_attributes = FactoryGirl.attributes_for(:another_user)
   @another_user_attributes.each { |k, v| fill_in k.to_s.humanize, with: v }
@@ -99,4 +103,8 @@ end
 
 Then /^I should see form error$/ do
   page.should have_selector("form p.errors")
+end
+
+Then /^I should see failed sign in$/ do
+  page.should have_content("Invalid email or password")
 end

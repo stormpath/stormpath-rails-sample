@@ -61,7 +61,7 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
-    devise-stormpath (0.2.1)
+    devise-stormpath (0.2.2)
       activesupport
       devise
       stormpath-rails (>= 0.4.3)
@@ -96,6 +96,8 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.7.6)
+    launchy (2.1.2)
+      addressable (~> 2.3)
     listen (0.7.2)
     lumberjack (1.0.2)
     mail (2.4.4)
@@ -222,11 +224,12 @@ DEPENDENCIES
   capybara
   cucumber-rails
   database_cleaner
-  devise-stormpath (= 0.2.1)
+  devise-stormpath (= 0.2.2)
   factory_girl_rails
   guard-cucumber
   guard-rspec
   jquery-rails
+  launchy
   pg
   rails (= 3.2.11)
   rb-inotify (~> 0.8.8)

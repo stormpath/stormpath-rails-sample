@@ -7,7 +7,7 @@ gem "thin"
 
 gem "rails", "3.2.11"
 
-gem "devise-stormpath", "0.2.1"
+gem "devise-stormpath", "0.2.2"
 
 group :assets do
   gem "sass-rails"
@@ -23,6 +23,7 @@ group :test, :development do
   gem "rspec-rails"
   gem "cucumber-rails", require: false
   gem "capybara"
+  gem "launchy"
   gem "factory_girl_rails"
   gem "database_cleaner"
   gem "rb-inotify", "~> 0.8.8"
