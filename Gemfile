@@ -1,19 +1,17 @@
 source :rubygems
 
 gem "sqlite3", groups: [:test, :development]
-
 gem "pg", group: :production
+
 gem "thin"
 
 gem "rails", "3.2.11"
 
-gem "devise-stormpath", "0.2.0"
+gem "devise-stormpath", "0.2.1"
 
 group :assets do
   gem "sass-rails"
-  gem "compass-rails"
   gem "bootstrap-sass"
-  gem "coffee-rails"
   gem "uglifier"
 end
 
@@ -30,6 +28,9 @@ group :test, :development do
   gem "rb-inotify", "~> 0.8.8"
   gem "guard-rspec"
   gem "guard-cucumber"
+end
+
+group :test do
   gem "vcr"
   gem "webmock"
 end

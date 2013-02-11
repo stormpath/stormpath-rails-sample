@@ -6,14 +6,14 @@ module NavigationHelpers
       when /^the home\s?page$/
         '/'
 
-      when /^the edit user page$/
-        edit_user_path(@user)
+      when /^the new user page$/
+        new_admin_user_path
 
-      when /^the edit (.*) page$/
-        page_name =~ /^the edit (.*) page$/
-        path_components = $1.split(/\s+/)
-        resource = instance_variable_get("@#{path_components.join('_')}")
-        self.send(path_components.unshift('edit').push('path').join('_').to_sym, resource)
+      when /^the edit user page$/
+        edit_admin_user_path(@user)
+
+      when /^the users page$/
+        admin_users_path
 
       else
         begin

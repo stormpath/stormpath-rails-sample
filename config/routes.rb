@@ -1,7 +1,9 @@
 StormpathRailsSample::Application.routes.draw do
   devise_for :users
 
-  resources :users
+  namespace :admin do
+    resources :users
+  end
 
-  root :to => 'users#index'
+  root :to => 'admin::users#index'
 end

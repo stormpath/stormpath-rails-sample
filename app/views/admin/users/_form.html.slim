@@ -1,4 +1,4 @@
-= simple_form_for(@user) do |f|
+= simple_form_for [:admin, @user] do |f|
   - unless @user.errors.empty?
     p.errors = @user.errors.full_messages.join(", ")
 

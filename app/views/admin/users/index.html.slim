@@ -16,10 +16,9 @@ table
       td = user.stormpath_url
       - (User::STORMPATH_FIELDS - [:password]).each do |field|
         td = user.send(field)
-      td = link_to 'Show', user
-      td = link_to 'Edit', edit_user_path(user)
-      td = link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete
-
+      td = link_to 'Show', admin_user_path(user)
+      td = link_to 'Edit', edit_admin_user_path(user)
+      td = link_to 'Destroy', admin_user_path(user), :confirm => 'Are you sure?', :method => :delete
 br
 
-= link_to 'New User', new_user_path
+= link_to 'New User', new_admin_user_path

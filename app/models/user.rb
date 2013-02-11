@@ -1,7 +1,6 @@
 class User < ActiveRecord::Base
   include Stormpath::Rails::Account
 
-  devise :stormpath_authenticatable, :stormpath_recoverable
+  devise :stormpath_authenticatable, :stormpath_recoverable, :stormpath_confirmable, :registerable
 
-  # need stormpath_url field to work
 end

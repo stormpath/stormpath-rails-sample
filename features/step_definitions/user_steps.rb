@@ -8,7 +8,7 @@ end
 When /^I sign in with username and password$/ do
   fill_in "Username", with: @user.username
   fill_in "Password", with: FactoryGirl.attributes_for(:user)[:password]
-  within ".form-actions" do
+  within "#new_user" do
     click_on "Sign in"
   end
 end
@@ -16,11 +16,28 @@ end
 When /^I sign in with incorrect username and password$/ do
   fill_in "Username", with: "invalid name"
   fill_in "Password", with: "invalid pass"
-  within ".form-actions" do
+  within "#new_user" do
     click_on "Sign in"
   end
 end
 
+When /^I submit user email$/ do
+  fill_in "Email", with: @user.email
+  click_on "Send me reset password instructions"
+end
+
+When /^I submit empty email$/ do
+  fill_in "Email", with: ""
+  click_on "Send me reset password instructions"
+end
+
+Then "I should see email validation error" do
+  page.should have_content("Email name cannot be null/empty")
+end
+
+Then "I should see that password reset email sent" do
+  page.should have_content("You will receive an email with instructions about how to reset your password in a few minutes.")
+end
 
 Then /^I should see login error$/ do
   page.should have_content("Invalid email or password.")
@@ -32,6 +49,10 @@ end
 
 When /^existing user$/ do
   @user = FactoryGirl.create(:user)
+end
+
+When /^user with real email$/ do
+  @user = FactoryGirl.create(:user, email: "alterdenis@gmail.com")
 end
 
 When /^I update user$/ do
