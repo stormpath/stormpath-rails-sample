@@ -1,4 +1,3 @@
-@stormpath
 Feature: Deleting user with stormpath account
 
   Background:

@@ -15,8 +15,10 @@ ActiveRecord::Schema.define(:version => 20121015184558) do
 
   create_table "users", :force => true do |t|
     t.string   "stormpath_url"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "remember_created_at"
+    t.string   "remember_token"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
 end

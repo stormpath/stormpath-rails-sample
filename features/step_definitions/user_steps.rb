@@ -89,7 +89,7 @@ When /^I delete user$/ do
 end
 
 Then /^I should see no user$/ do
-  @user.attributes.each {|k, v| page.should have_no_content(v) }
+  @user.attributes.delete_if { |k, v| v.nil? }.each {|k, v| page.should have_no_content(v) }
 end
 
 Then /^I should see user details$/ do

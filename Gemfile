@@ -7,7 +7,7 @@ gem "thin"
 
 gem "rails", "3.2.11"
 
-gem "devise-stormpath", "0.2.2"
+gem "devise-stormpath", "0.2.3"
 
 group :assets do
   gem "sass-rails"

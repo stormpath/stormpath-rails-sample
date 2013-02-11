@@ -61,7 +61,7 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
-    devise-stormpath (0.2.2)
+    devise-stormpath (0.2.3)
       activesupport
       devise
       stormpath-rails (>= 0.4.3)
@@ -224,7 +224,7 @@ DEPENDENCIES
   capybara
   cucumber-rails
   database_cleaner
-  devise-stormpath (= 0.2.2)
+  devise-stormpath (= 0.2.3)
   factory_girl_rails
   guard-cucumber
   guard-rspec
