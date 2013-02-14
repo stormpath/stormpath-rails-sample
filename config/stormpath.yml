@@ -1,8 +1,6 @@
 common:
-  #work around travis encrypted string length limit
-  href: <%= ENV['STORMPATH_URL'] || "https://3HSCDR9GU1PAI9XPZ4RPLXRVO:#{ENV['STORMPATH_SECRET']}@api.stormpath.com/v1/applications/vmuSPsTBRnGBQ6JaxxeuhA" %>
-  #likely redundant, check if can be removed
-  application: https://api.stormpath.com/v1/applications/vmuSPsTBRnGBQ6JaxxeuhA
+  #work around Travis encrypted string length limit
+  stormpath_url: <%= ENV['STORMPATH_URL'] || "https://3HSCDR9GU1PAI9XPZ4RPLXRVO:#{ENV['STORMPATH_SECRET']}@api.stormpath.com/v1/applications/vmuSPsTBRnGBQ6JaxxeuhA" %>
 
 development:
   root: https://api.stormpath.com/v1/directories/CuRnLT-YTO6SZ808ndy9jQ
