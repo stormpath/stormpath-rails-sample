@@ -26,7 +26,6 @@ group :test, :development do
   gem "launchy"
   gem "factory_girl_rails"
   gem "database_cleaner"
-  gem "rb-inotify", "~> 0.8.8"
   gem "guard-rspec"
   gem "guard-cucumber"
 end
