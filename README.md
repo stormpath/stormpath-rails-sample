@@ -3,8 +3,7 @@
 stormpath-rails-sample
 ======================
 
-Sample Ruby on Rails application using Stormpath
+## Out of date, not supported, do not use
 
-TODO
+Please contact support@stormpath.com for information about this sample
 
-* For efficient collection load try to fetch accounts from stormpath first,  then get records from db by hrefs then mix all together.
