@@ -1,5 +1,5 @@
 # Ruby on Rails Example Project
-A simple Ruby on Rails web application to demonstrate how to use stormpath-rails gem with Rails.
+A simple Ruby on Rails web application to demonstrate how to use [stormpath-rails](https://github.com/stormpath/stormpath-rails) gem with Rails.
 
 ### Get Started!
 
@@ -33,7 +33,9 @@ A simple Ruby on Rails web application to demonstrate how to use stormpath-rails
 
 ## Learn More
 [stormpath-rails](https://github.com/stormpath/stormpath-rails) gem
+
 [stormpath-sdk-ruby](https://github.com/stormpath/stormpath-sdk-ruby) gem
+
 Visit [http://docs.stormpath.com/rest/product-guide/](http://docs.stormpath.com/rest/product-guide/)
 
 ## Contact Stormpath Support
